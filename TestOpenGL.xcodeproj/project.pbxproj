@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52F47D1A1C438B9300542E22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D191C438B9300542E22 /* main.m */; };
+		52F47D1D1C438B9300542E22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D1C1C438B9300542E22 /* AppDelegate.m */; };
+		52F47D201C438B9300542E22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D1F1C438B9300542E22 /* ViewController.m */; };
+		52F47D231C438B9300542E22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F47D211C438B9300542E22 /* Main.storyboard */; };
+		52F47D261C438B9300542E22 /* TestOpenGL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D241C438B9300542E22 /* TestOpenGL.xcdatamodeld */; };
+		52F47D281C438B9300542E22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F47D271C438B9300542E22 /* Assets.xcassets */; };
+		52F47D2B1C438B9300542E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F47D291C438B9300542E22 /* LaunchScreen.storyboard */; };
+		52F47D361C438B9300542E22 /* TestOpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D351C438B9300542E22 /* TestOpenGLTests.m */; };
+		52F47D411C438B9300542E22 /* TestOpenGLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D401C438B9300542E22 /* TestOpenGLUITests.m */; };
+		52F47D521C438C1100542E22 /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D511C438C1100542E22 /* PaintingView.m */; };
+		52F47D561C438DF400542E22 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F47D551C438DF400542E22 /* OpenGLES.framework */; };
+		52F47D581C438DFC00542E22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F47D571C438DFC00542E22 /* QuartzCore.framework */; };
+		52F47D5B1C4399AF00542E22 /* fileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D5A1C4399AF00542E22 /* fileUtil.m */; };
+		52F47D651C43A8AA00542E22 /* point.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 52F47D631C43A8AA00542E22 /* point.vsh */; };
+		52F47D671C43AC1000542E22 /* point.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 52F47D661C43A93800542E22 /* point.fsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52F47D321C438B9300542E22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52F47D0D1C438B9300542E22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52F47D141C438B9300542E22;
+			remoteInfo = TestOpenGL;
+		};
+		52F47D3D1C438B9300542E22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52F47D0D1C438B9300542E22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52F47D141C438B9300542E22;
+			remoteInfo = TestOpenGL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52F47D151C438B9300542E22 /* TestOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F47D191C438B9300542E22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52F47D1B1C438B9300542E22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52F47D1C1C438B9300542E22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52F47D1E1C438B9300542E22 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52F47D1F1C438B9300542E22 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52F47D221C438B9300542E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52F47D251C438B9300542E22 /* TestOpenGL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestOpenGL.xcdatamodel; sourceTree = "<group>"; };
+		52F47D271C438B9300542E22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52F47D2A1C438B9300542E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52F47D2C1C438B9300542E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F47D311C438B9300542E22 /* TestOpenGLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOpenGLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F47D351C438B9300542E22 /* TestOpenGLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOpenGLTests.m; sourceTree = "<group>"; };
+		52F47D371C438B9300542E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F47D3C1C438B9300542E22 /* TestOpenGLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOpenGLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F47D401C438B9300542E22 /* TestOpenGLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOpenGLUITests.m; sourceTree = "<group>"; };
+		52F47D421C438B9300542E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F47D511C438C1100542E22 /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingView.m; sourceTree = "<group>"; };
+		52F47D541C438C7200542E22 /* PaintingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintingView.h; sourceTree = "<group>"; };
+		52F47D551C438DF400542E22 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		52F47D571C438DFC00542E22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		52F47D591C4399AF00542E22 /* fileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileUtil.h; sourceTree = "<group>"; };
+		52F47D5A1C4399AF00542E22 /* fileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fileUtil.m; sourceTree = "<group>"; };
+		52F47D631C43A8AA00542E22 /* point.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = point.vsh; sourceTree = "<group>"; };
+		52F47D661C43A93800542E22 /* point.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = point.fsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52F47D121C438B9300542E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F47D581C438DFC00542E22 /* QuartzCore.framework in Frameworks */,
+				52F47D561C438DF400542E22 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F47D2E1C438B9300542E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F47D391C438B9300542E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52F47D0C1C438B9300542E22 = {
+			isa = PBXGroup;
+			children = (
+				52F47D611C43A8AA00542E22 /* shader */,
+				52F47D571C438DFC00542E22 /* QuartzCore.framework */,
+				52F47D551C438DF400542E22 /* OpenGLES.framework */,
+				52F47D171C438B9300542E22 /* TestOpenGL */,
+				52F47D341C438B9300542E22 /* TestOpenGLTests */,
+				52F47D3F1C438B9300542E22 /* TestOpenGLUITests */,
+				52F47D161C438B9300542E22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52F47D161C438B9300542E22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52F47D151C438B9300542E22 /* TestOpenGL.app */,
+				52F47D311C438B9300542E22 /* TestOpenGLTests.xctest */,
+				52F47D3C1C438B9300542E22 /* TestOpenGLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52F47D171C438B9300542E22 /* TestOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				52F47D1B1C438B9300542E22 /* AppDelegate.h */,
+				52F47D1C1C438B9300542E22 /* AppDelegate.m */,
+				52F47D1E1C438B9300542E22 /* ViewController.h */,
+				52F47D1F1C438B9300542E22 /* ViewController.m */,
+				52F47D211C438B9300542E22 /* Main.storyboard */,
+				52F47D271C438B9300542E22 /* Assets.xcassets */,
+				52F47D291C438B9300542E22 /* LaunchScreen.storyboard */,
+				52F47D2C1C438B9300542E22 /* Info.plist */,
+				52F47D241C438B9300542E22 /* TestOpenGL.xcdatamodeld */,
+				52F47D181C438B9300542E22 /* Supporting Files */,
+				52F47D511C438C1100542E22 /* PaintingView.m */,
+				52F47D541C438C7200542E22 /* PaintingView.h */,
+			);
+			path = TestOpenGL;
+			sourceTree = "<group>";
+		};
+		52F47D181C438B9300542E22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52F47D591C4399AF00542E22 /* fileUtil.h */,
+				52F47D5A1C4399AF00542E22 /* fileUtil.m */,
+				52F47D191C438B9300542E22 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52F47D341C438B9300542E22 /* TestOpenGLTests */ = {
+			isa = PBXGroup;
+			children = (
+				52F47D351C438B9300542E22 /* TestOpenGLTests.m */,
+				52F47D371C438B9300542E22 /* Info.plist */,
+			);
+			path = TestOpenGLTests;
+			sourceTree = "<group>";
+		};
+		52F47D3F1C438B9300542E22 /* TestOpenGLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52F47D401C438B9300542E22 /* TestOpenGLUITests.m */,
+				52F47D421C438B9300542E22 /* Info.plist */,
+			);
+			path = TestOpenGLUITests;
+			sourceTree = "<group>";
+		};
+		52F47D611C43A8AA00542E22 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				52F47D631C43A8AA00542E22 /* point.vsh */,
+				52F47D661C43A93800542E22 /* point.fsh */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52F47D141C438B9300542E22 /* TestOpenGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F47D451C438B9300542E22 /* Build configuration list for PBXNativeTarget "TestOpenGL" */;
+			buildPhases = (
+				52F47D111C438B9300542E22 /* Sources */,
+				52F47D121C438B9300542E22 /* Frameworks */,
+				52F47D131C438B9300542E22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestOpenGL;
+			productName = TestOpenGL;
+			productReference = 52F47D151C438B9300542E22 /* TestOpenGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52F47D301C438B9300542E22 /* TestOpenGLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F47D481C438B9300542E22 /* Build configuration list for PBXNativeTarget "TestOpenGLTests" */;
+			buildPhases = (
+				52F47D2D1C438B9300542E22 /* Sources */,
+				52F47D2E1C438B9300542E22 /* Frameworks */,
+				52F47D2F1C438B9300542E22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52F47D331C438B9300542E22 /* PBXTargetDependency */,
+			);
+			name = TestOpenGLTests;
+			productName = TestOpenGLTests;
+			productReference = 52F47D311C438B9300542E22 /* TestOpenGLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52F47D3B1C438B9300542E22 /* TestOpenGLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F47D4B1C438B9300542E22 /* Build configuration list for PBXNativeTarget "TestOpenGLUITests" */;
+			buildPhases = (
+				52F47D381C438B9300542E22 /* Sources */,
+				52F47D391C438B9300542E22 /* Frameworks */,
+				52F47D3A1C438B9300542E22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52F47D3E1C438B9300542E22 /* PBXTargetDependency */,
+			);
+			name = TestOpenGLUITests;
+			productName = TestOpenGLUITests;
+			productReference = 52F47D3C1C438B9300542E22 /* TestOpenGLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52F47D0D1C438B9300542E22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = phm;
+				TargetAttributes = {
+					52F47D141C438B9300542E22 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = R265B25884;
+					};
+					52F47D301C438B9300542E22 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = R265B25884;
+						TestTargetID = 52F47D141C438B9300542E22;
+					};
+					52F47D3B1C438B9300542E22 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = R265B25884;
+						TestTargetID = 52F47D141C438B9300542E22;
+					};
+				};
+			};
+			buildConfigurationList = 52F47D101C438B9300542E22 /* Build configuration list for PBXProject "TestOpenGL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52F47D0C1C438B9300542E22;
+			productRefGroup = 52F47D161C438B9300542E22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52F47D141C438B9300542E22 /* TestOpenGL */,
+				52F47D301C438B9300542E22 /* TestOpenGLTests */,
+				52F47D3B1C438B9300542E22 /* TestOpenGLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52F47D131C438B9300542E22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F47D671C43AC1000542E22 /* point.fsh in Resources */,
+				52F47D2B1C438B9300542E22 /* LaunchScreen.storyboard in Resources */,
+				52F47D281C438B9300542E22 /* Assets.xcassets in Resources */,
+				52F47D651C43A8AA00542E22 /* point.vsh in Resources */,
+				52F47D231C438B9300542E22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F47D2F1C438B9300542E22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F47D3A1C438B9300542E22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52F47D111C438B9300542E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F47D261C438B9300542E22 /* TestOpenGL.xcdatamodeld in Sources */,
+				52F47D201C438B9300542E22 /* ViewController.m in Sources */,
+				52F47D521C438C1100542E22 /* PaintingView.m in Sources */,
+				52F47D5B1C4399AF00542E22 /* fileUtil.m in Sources */,
+				52F47D1D1C438B9300542E22 /* AppDelegate.m in Sources */,
+				52F47D1A1C438B9300542E22 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F47D2D1C438B9300542E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F47D361C438B9300542E22 /* TestOpenGLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F47D381C438B9300542E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F47D411C438B9300542E22 /* TestOpenGLUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52F47D331C438B9300542E22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52F47D141C438B9300542E22 /* TestOpenGL */;
+			targetProxy = 52F47D321C438B9300542E22 /* PBXContainerItemProxy */;
+		};
+		52F47D3E1C438B9300542E22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52F47D141C438B9300542E22 /* TestOpenGL */;
+			targetProxy = 52F47D3D1C438B9300542E22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52F47D211C438B9300542E22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F47D221C438B9300542E22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52F47D291C438B9300542E22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F47D2A1C438B9300542E22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52F47D431C438B9300542E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52F47D441C438B9300542E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52F47D461C438B9300542E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestOpenGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttgan.TestOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52F47D471C438B9300542E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestOpenGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttgan.TestOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52F47D491C438B9300542E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestOpenGLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttgan.TestOpenGLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestOpenGL.app/TestOpenGL";
+			};
+			name = Debug;
+		};
+		52F47D4A1C438B9300542E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestOpenGLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttgan.TestOpenGLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestOpenGL.app/TestOpenGL";
+			};
+			name = Release;
+		};
+		52F47D4C1C438B9300542E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestOpenGLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttgan.TestOpenGLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestOpenGL;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		52F47D4D1C438B9300542E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestOpenGLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttgan.TestOpenGLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestOpenGL;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52F47D101C438B9300542E22 /* Build configuration list for PBXProject "TestOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F47D431C438B9300542E22 /* Debug */,
+				52F47D441C438B9300542E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F47D451C438B9300542E22 /* Build configuration list for PBXNativeTarget "TestOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F47D461C438B9300542E22 /* Debug */,
+				52F47D471C438B9300542E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52F47D481C438B9300542E22 /* Build configuration list for PBXNativeTarget "TestOpenGLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F47D491C438B9300542E22 /* Debug */,
+				52F47D4A1C438B9300542E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52F47D4B1C438B9300542E22 /* Build configuration list for PBXNativeTarget "TestOpenGLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F47D4C1C438B9300542E22 /* Debug */,
+				52F47D4D1C438B9300542E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52F47D241C438B9300542E22 /* TestOpenGL.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52F47D251C438B9300542E22 /* TestOpenGL.xcdatamodel */,
+			);
+			currentVersion = 52F47D251C438B9300542E22 /* TestOpenGL.xcdatamodel */;
+			path = TestOpenGL.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 52F47D0D1C438B9300542E22 /* Project object */;
+}
