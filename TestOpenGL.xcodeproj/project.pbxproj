@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525AC3891C4CE675000D6F3C /* Particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 525AC3881C4CE675000D6F3C /* Particle.png */; };
 		52F47D1A1C438B9300542E22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D191C438B9300542E22 /* main.m */; };
 		52F47D1D1C438B9300542E22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D1C1C438B9300542E22 /* AppDelegate.m */; };
 		52F47D201C438B9300542E22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F47D1F1C438B9300542E22 /* ViewController.m */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		525AC3881C4CE675000D6F3C /* Particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particle.png; sourceTree = "<group>"; };
 		52F47D151C438B9300542E22 /* TestOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F47D191C438B9300542E22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52F47D1B1C438B9300542E22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -169,8 +171,9 @@
 		52F47D611C43A8AA00542E22 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				52F47D631C43A8AA00542E22 /* point.vsh */,
 				52F47D661C43A93800542E22 /* point.fsh */,
+				525AC3881C4CE675000D6F3C /* Particle.png */,
+				52F47D631C43A8AA00542E22 /* point.vsh */,
 			);
 			path = shader;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F47D671C43AC1000542E22 /* point.fsh in Resources */,
+				525AC3891C4CE675000D6F3C /* Particle.png in Resources */,
 				52F47D2B1C438B9300542E22 /* LaunchScreen.storyboard in Resources */,
 				52F47D281C438B9300542E22 /* Assets.xcassets in Resources */,
 				52F47D651C43A8AA00542E22 /* point.vsh in Resources */,
@@ -541,6 +545,7 @@
 				52F47D471C438B9300542E22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52F47D481C438B9300542E22 /* Build configuration list for PBXNativeTarget "TestOpenGLTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +554,7 @@
 				52F47D4A1C438B9300542E22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52F47D4B1C438B9300542E22 /* Build configuration list for PBXNativeTarget "TestOpenGLUITests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +563,7 @@
 				52F47D4D1C438B9300542E22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

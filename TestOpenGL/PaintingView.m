@@ -15,6 +15,20 @@
 #import <GLKit/GLKit.h>
 #import "fileUtil.h"
 
+typedef struct
+{
+    int text_id;
+    float width;
+    float height;
+    
+} textureinfo_id;
+
+@interface PaintingView()
+{
+    textureinfo_id brushTexture;     // brush texture
+    
+}
+@end
 @implementation PaintingView
 
 +(Class)layerClass
@@ -27,7 +41,7 @@
     self = [super initWithFrame:frame];
     if(self)
     {
-       
+        
     }
     return self;
 }
@@ -100,9 +114,9 @@
 
 -(void)setProgram
 {
-   
+    
     //创建opengl program
-   GLuint program = glCreateProgram();
+    GLuint program = glCreateProgram();
     _programID=program;
     
     //编译shader
@@ -206,9 +220,11 @@
     
     glUniformMatrix4fv([[_uniformID valueForKey:@"MVP"] intValue], 1, GL_FALSE, MVPMatrix.m);
     
-    glUniform1f([[_uniformID valueForKey:@"PointSize"] intValue], 2);
+    glUniform1f([[_uniformID valueForKey:@"PointSize"] intValue], brushTexture.width/2);
     
     glUniform4f([[_uniformID valueForKey:@"vColor"] intValue], 1.0,0.0 , 0.5, 1.0);
+    
+    glUniform1i([[_uniformID valueForKey:@"texture"] intValue], 0);
     //根据渲染的宽高设置视口的大小
     glViewport(0, 0, _backingWidth, _backingHeight);
     
@@ -222,10 +238,38 @@
         
         GLuint value = (GLuint)[[_attribID valueForKey:key] intValue];
         glBindAttribLocation(_programID,value,pos);
-    
+        
     }
     
     glGenBuffers(1, &_vboID);
+}
+
+-(textureinfo_id)genTexture:(NSString*)name
+{
+    CGImageRef image = [UIImage imageNamed:name].CGImage;
+    float width = CGImageGetWidth(image);
+    float height = CGImageGetHeight(image);
+    
+    GLubyte* brushdata = (GLubyte *)calloc(width*height*4, sizeof(GLubyte));
+    CGContextRef brushContext =CGBitmapContextCreate(brushdata, width, height, 8, width*4, CGImageGetColorSpace(image), kCGImageAlphaPremultipliedLast);
+    CGContextDrawImage(brushContext, CGRectMake(0.0, 0.0, (CGFloat)width, (CGFloat)height), image);
+    CGContextRelease(brushContext);
+    
+    GLuint text;
+    glGenTextures(1,&text);
+    glBindTexture(GL_TEXTURE_2D, text);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA,GL_UNSIGNED_BYTE , brushdata);
+    
+    textureinfo_id textinfo;
+    textinfo.text_id = text;
+    textinfo.width = width;
+    textinfo.height = height;
+    
+    free(brushdata);
+    
+    return textinfo;
+    
 }
 
 // Drawings a line onscreen based on where the user touches
@@ -308,7 +352,7 @@
 
 -(void)layoutSubviews
 {
-   
+    
     
     if (!_isInit) {
         _isInit = [self initGL];
@@ -326,6 +370,8 @@
     [self setupColorBuffer];
     [self setupDepthBuffer];
     [self setFrameBuffer];
+    
+    brushTexture = [self genTexture:@"Particle.png"];
     [self setProgram];
     
     _uniformID = [[NSMutableDictionary alloc] init];
@@ -335,7 +381,9 @@
     [self parseUniform:_programID];
     
     [self createVBO];
- 
+    
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
     return true;
 }
 
